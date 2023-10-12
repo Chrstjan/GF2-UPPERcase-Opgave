@@ -81,6 +81,11 @@ figcaption footer {
 /* Media Queries */
 /* Mobile Display */
 @media (max-width: 850px) {
+
+    .main-container .hero-image {
+        z-index: 0;
+    }
+
     .hero-image figure img {
         position: absolute;
         padding-left: 0.5rem;
