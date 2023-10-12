@@ -39,6 +39,7 @@
 
 
 /* Media Queries */
+/* Mobile Display */
 @media (max-width: 850px) {
     .main-nav {
         display: flex;

@@ -128,6 +128,7 @@ form .radioBtns span {
 }
 
 /* Media Queries */
+/* Mobile Display */
 @media (max-width: 850px) {
 
     .main-container .contact-image {
