@@ -1,0 +1,100 @@
+.main-container .contact-image {
+    background-image: url(../images/UC-Happy-Woman.jpg);
+    width: 100%;
+    height: 30vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-image {
+    position: relative;
+    padding: 0.3rem;
+    color: #fff;
+}
+
+.contact-image img {
+    width: 37vw;
+    z-index: 9;
+}
+
+.contact-image .form-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    margin-bottom: 1.6rem;
+}
+
+.contact-uppercase .maps-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    color: gray;
+}
+
+.main-container img {
+    width: 40vw;
+}
+
+.maps-container article footer {
+    text-align: right;
+}
+
+.main-container article footer a {
+    color: gray;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.form-container img {
+    width: 18vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-container form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+form .form-left {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-right textarea {
+    resize: none;
+}
+
+.form-container form input {
+    padding: 0.5rem;
+}
+
+form .checkboxes span {
+    padding-top: 0.6rem;
+    display: flex;
+}
+
+form .radioBtns {
+    padding-top: 1rem;
+}
+
+form .radioBtns span {
+    display: flex;
+}

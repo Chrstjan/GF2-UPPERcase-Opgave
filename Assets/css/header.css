@@ -1,0 +1,38 @@
+.main-header {
+    background: #fff;
+    border-bottom: 2px solid #eee;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 3rem;
+}
+
+.main-nav .nav-logo {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    margin-right: 5rem;
+}
+
+.nav-logo img {
+    width: 20vw;
+}
+
+.main-nav ul li {
+    list-style-type: none;
+
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #000;
+}

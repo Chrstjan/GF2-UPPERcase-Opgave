@@ -1,0 +1,66 @@
+main .main-container {
+    max-width: 1300px;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+}
+
+.main-container .hero-image {
+    background-image: url(../images/Upper-Ribbon-Front.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-image figure {
+    padding-top: 0.4rem;
+}
+
+.hero-image figure img {
+    width: 37vw;
+}
+
+.hero-image figcaption p {
+    max-width: 380px;
+    word-break: normal;
+    white-space: normal;
+}
+
+.hero-image figcaption,
+ figcaption footer a {
+    color: #fff;
+}
+
+figcaption footer {
+    text-align: center;
+    padding-top: 3rem;
+    padding-right: 31rem; /* This is only a temp fix*/
+    padding-bottom: 0.3rem;
+}
+
+.work-method article{
+    color: gray;
+    padding-bottom: 1.5rem;
+}
+
+.work-method article p {
+    word-break: normal;
+    white-space: normal;
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+.about-us .article-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.article-card footer {
+    text-align: right;
+}
