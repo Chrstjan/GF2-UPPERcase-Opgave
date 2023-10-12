@@ -7,8 +7,10 @@ main .main-container {
 }
 
 .main-container .hero-image {
+    position: relative;
     background-image: url(../images/Upper-Ribbon-Front.jpg);
-    width: 100%;
+    width: 99%;
+    height: 30vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,13 +33,15 @@ main .main-container {
 .hero-image figcaption,
  figcaption footer a {
     color: #fff;
+    text-decoration: underline lightgray;
 }
 
 figcaption footer {
+    position: absolute;
     text-align: center;
-    padding-top: 3rem;
-    padding-right: 31rem; /* This is only a temp fix*/
-    padding-bottom: 0.3rem;
+    bottom: 0;
+    left: 20%;
+    padding-bottom: 0.7rem;
 }
 
 .work-method article{
@@ -61,6 +65,53 @@ figcaption footer {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.article-card .article-text,
+.about-us header {
+    padding-left: 2rem;
+}
+
 .article-card footer {
     text-align: right;
+}
+
+.article-card .article-two-img img {
+    width: 40vw;
+}
+
+/* Media Queries */
+/* Mobile Display */
+@media (max-width: 850px) {
+    .hero-image figure img {
+        position: absolute;
+        padding-left: 0.5rem;
+        left: 0;
+        width: 30vw;
+    }
+
+    .hero-image figcaption {
+        padding-top: 0.6rem;
+        padding-left: 0.5rem;
+        z-index: 9;
+        position: absolute;
+        left: 0;
+        font-size: 12px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .hero-image figcaption h2 {
+        padding-top: 0.2rem;
+    }
+
+    .hero-image figcaption p {
+        margin-top: 0.5rem;
+        max-width: 500px;
+        word-break: normal;
+        white-space: normal;
+    }
+    
+    figcaption footer {
+        bottom: 0;
+        right: 0;
+    }
 }
