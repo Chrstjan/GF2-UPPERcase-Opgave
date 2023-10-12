@@ -36,3 +36,35 @@
     text-decoration: none;
     color: #000;
 }
+
+
+/* Media Queries */
+@media (max-width: 850px) {
+    .main-nav {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .main-nav .nav-logo {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-logo img {
+        width: 40vw;
+    }
+}

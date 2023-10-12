@@ -1,6 +1,6 @@
 .main-footer {
     padding: 3rem;
-    background-color: gray;
+    background-color: lightgray;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
@@ -20,4 +20,15 @@
 
 .footer-icons img {
     width: 4vw;
+}
+
+/* Media Queries */
+@media (max-width: 850px) {
+    .main-footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-icons img {
+        width: 6vw;
+    }
 }

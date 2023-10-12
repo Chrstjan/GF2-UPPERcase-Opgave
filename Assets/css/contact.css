@@ -82,6 +82,34 @@ form .form-right {
     resize: none;
 }
 
+.form-right span {
+    padding-top: 0.6rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.form-right input[type=reset],
+.form-right input[type="submit"] {
+    padding: 1rem 5rem;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-right input[type=reset]:hover,
+.form-right input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.form-right input[type="reset"] {
+    background: red;
+}
+
+.form-right input[type="submit"] {
+    background: limegreen;
+}
+
 .form-container form input {
     padding: 0.5rem;
 }
@@ -97,4 +125,42 @@ form .radioBtns {
 
 form .radioBtns span {
     display: flex;
+}
+
+/* Media Queries */
+@media (max-width: 850px) {
+
+    .main-container .contact-image {
+        width: 99%;
+        height: 30vw;
+    }
+
+    .contact-image .form-btn {
+        padding: 0.4rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Styling the google maps image */
+    .maps-container img {
+        width: 90vw;
+    }
+
+    .contact-uppercase .maps-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .form-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .form-container form{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .form-right span input[type="reset"],
+    .form-right span input[type="submit"]{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }

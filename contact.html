@@ -92,17 +92,17 @@
                             <div class="radioBtns">
                                 <p>JEG ER:</p>
                                 <span>
-                                    <input type="radio" class="usertype" id="userType">
+                                    <input type="radio" class="usertype" id="userType" name="user-type">
                                     <label for="usertype">Organisation</label>
                                 </span>
     
                                 <span>
-                                    <input type="radio" class="usertype" id="userType">
+                                    <input type="radio" class="usertype" id="userType" name="user-type">
                                     <label for="usertype">Privat Virksomhed</label>
                                 </span>
     
                                 <span>
-                                    <input type="radio" class="usertype" id="userType">
+                                    <input type="radio" class="usertype" id="userType" name="user-type">
                                     <label for="usertype">Andet</label>
                                 </span>
                             </div>
@@ -111,8 +111,10 @@
                         <div class="form-right">
                             <textarea rows="15" placeholder="Forespørgsel"></textarea>
                             <div class="form-btns">
-                                <input type="reset" value="Cancel">
-                                <input type="submit" value="Send">
+                                <span>
+                                    <input type="reset" value="Cancel">
+                                    <input type="submit" value="Send">
+                                </span>
                             </div>
                         </div>
                     </form>
