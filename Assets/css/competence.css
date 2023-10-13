@@ -1,0 +1,45 @@
+.competence-image {
+    background-image: url(../images/Upper-Ribbon-Comp.jpg);
+    width: 99%;
+    height: 30vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.competence-image {
+    padding-left: 0.7rem;
+}
+
+.competence-image .competence-text {
+    color: #fff;
+    max-width: 360px;
+    padding-top: 0.3rem;
+    padding-left: 0.7rem;
+}
+
+.core-competence {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.competence-article {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+
+}
+
+.competence-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.competence-card img {
+    display: none; /* Figure out why this image can't scale */
+}
+
+.competence-card figcaption footer {
+    text-align: right;
+}
