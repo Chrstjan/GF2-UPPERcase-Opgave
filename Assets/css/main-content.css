@@ -1,122 +1,121 @@
 main .main-container {
-    max-width: 1300px;
-    background: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.5rem;
+  max-width: 1300px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
 }
 
 .main-container .hero-image {
-    position: relative;
-    background-image: url(../images/Upper-Ribbon-Front.jpg);
-    width: 99%;
-    height: 30vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  position: relative;
+  background-image: url(../images/Upper-Ribbon-Front.jpg);
+  width: 99%;
+  height: 30vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-image figure {
-    padding-top: 0.4rem;
+  padding-top: 0.4rem;
 }
 
 .hero-image figure img {
-    width: 37vw;
+  width: 37vw;
 }
 
 .hero-image figcaption p {
-    max-width: 380px;
-    word-break: normal;
-    white-space: normal;
+  max-width: 380px;
+  word-break: normal;
+  white-space: normal;
 }
 
-.hero-image figcaption,
- figcaption footer a {
-    color: #fff;
-    text-decoration: underline lightgray;
+.hero-image .hero-figcaption,
+.hero-figcaption footer a {
+  color: #fff;
+  text-decoration: underline lightgray;
 }
 
-figcaption footer {
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    left: 20%;
-    padding-bottom: 0.7rem;
+.hero-image .hero-figcaption footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 20%;
+  padding-bottom: 0.7rem;
 }
 
-.work-method article{
-    color: gray;
-    padding-bottom: 1.5rem;
+.work-method article {
+  color: gray;
+  padding-bottom: 1.5rem;
 }
 
 .work-method article p {
-    word-break: normal;
-    white-space: normal;
+  word-break: normal;
+  white-space: normal;
 }
 
 .about-us {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
 }
 
 .about-us .article-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .article-card .article-text,
 .about-us header {
-    padding-left: 2rem;
+  padding-left: 2rem;
 }
 
 .article-card footer {
-    text-align: right;
+  text-align: right;
 }
 
 .article-card .article-two-img img {
-    width: 40vw;
+  width: 40vw;
 }
 
 /* Media Queries */
 /* Mobile Display */
 @media (max-width: 850px) {
+  .main-container .hero-image {
+    z-index: 0;
+  }
 
-    .main-container .hero-image {
-        z-index: 0;
-    }
+  .hero-image figure img {
+    position: absolute;
+    padding-left: 0.5rem;
+    left: 0;
+    width: 30vw;
+  }
 
-    .hero-image figure img {
-        position: absolute;
-        padding-left: 0.5rem;
-        left: 0;
-        width: 30vw;
-    }
+  .hero-image figcaption {
+    padding-top: 0.6rem;
+    padding-left: 0.5rem;
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+  }
 
-    .hero-image figcaption {
-        padding-top: 0.6rem;
-        padding-left: 0.5rem;
-        z-index: 9;
-        position: absolute;
-        left: 0;
-        font-size: 12px;
-        color: #000;
-        text-decoration: none;
-    }
+  .hero-image figcaption h2 {
+    padding-top: 0.2rem;
+  }
 
-    .hero-image figcaption h2 {
-        padding-top: 0.2rem;
-    }
+  .hero-image figcaption p {
+    margin-top: 0.5rem;
+    max-width: 500px;
+    word-break: normal;
+    white-space: normal;
+  }
 
-    .hero-image figcaption p {
-        margin-top: 0.5rem;
-        max-width: 500px;
-        word-break: normal;
-        white-space: normal;
-    }
-    
-    figcaption footer {
-        bottom: 0;
-        right: 0;
-    }
+  figcaption footer {
+    bottom: 0;
+    right: 0;
+  }
 }

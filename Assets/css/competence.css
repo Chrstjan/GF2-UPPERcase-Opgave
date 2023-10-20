@@ -1,45 +1,53 @@
 .competence-image {
-    background-image: url(../images/Upper-Ribbon-Comp.jpg);
-    width: 99%;
-    height: 30vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../images/Upper-Ribbon-Comp.jpg);
+  width: 99%;
+  height: 30vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .competence-image {
-    padding-left: 0.7rem;
+  padding-left: 0.7rem;
 }
 
 .competence-image .competence-text {
-    color: #fff;
-    max-width: 360px;
-    padding-top: 0.3rem;
-    padding-left: 0.7rem;
+  color: #fff;
+  max-width: 360px;
+  padding-top: 0.3rem;
+  padding-left: 0.7rem;
 }
 
 .core-competence {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
 }
 
-.competence-article {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 0.5rem;
-
+.competence-left-side {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.5rem;
 }
 
-.competence-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.competence-left-side .competence-card {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .competence-card img {
-    display: none; /* Figure out why this image can't scale */
+  width: 6.3vw;
 }
 
-.competence-card figcaption footer {
-    text-align: right;
+.competence-card .figure-footer {
+  text-align: right;
+}
+
+.competence-progress .process-card {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.process-card-footer {
+  text-align: right;
 }
