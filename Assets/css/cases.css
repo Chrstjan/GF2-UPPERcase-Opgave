@@ -1,0 +1,73 @@
+.main-container .cases-image {
+    background-image: url(../../_FILES/GFX/image-3.png);
+    width: 99%;
+    height: 30vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cases-image {
+    position: relative;
+    padding: 0.3rem;
+    color: #fff;
+  }
+
+.cases-image img {
+    width: 34vw;
+}
+
+.cases-image .form-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+
+.cases-image .form-btn:hover {
+    cursor: pointer;
+}
+
+.case-studies .choosen-cases {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.choosen-cases figure img {
+    width: 100%;
+}
+
+.case-studies .choosen-cases figure{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.other-cases {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.other-cases figure img {
+    width: 100%;
+}
+
+.other-cases figure {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+/* Media Queries */
+/* Mobile Display */
+@media (max-width: 850px) {
+    .main-container .cases-image {
+        height: 60vw;
+    }
+}
