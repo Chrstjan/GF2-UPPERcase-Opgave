@@ -30,10 +30,16 @@ main .main-container {
   white-space: normal;
 }
 
-.hero-image .hero-figcaption,
-.hero-figcaption footer a {
+.hero-image .hero-figcaption {
+  color: #fff;
+}
+
+.hero-figure .hero-footer a {
   color: #fff;
   text-decoration: underline lightgray;
+  padding-bottom: 0.5rem;
+  padding-left: 0.2rem;
+  font-size: 15px;
 }
 
 .hero-image .hero-figcaption footer {
@@ -82,7 +88,8 @@ main .main-container {
 /* Mobile Display */
 @media (max-width: 850px) {
   .main-container .hero-image {
-    z-index: 0;
+    width: 99%;
+    height: 40vw;
   }
 
   .hero-image figure img {
@@ -95,7 +102,6 @@ main .main-container {
   .hero-image figcaption {
     padding-top: 0.6rem;
     padding-left: 0.5rem;
-    z-index: 9;
     position: absolute;
     left: 0;
     font-size: 12px;
@@ -107,15 +113,28 @@ main .main-container {
     padding-top: 0.2rem;
   }
 
+  .hero-image .mobile-hero-text {
+    color: #000;
+  }
+
   .hero-image figcaption p {
     margin-top: 0.5rem;
-    max-width: 500px;
+    max-width: 186px;
     word-break: normal;
     white-space: normal;
   }
 
-  figcaption footer {
+  .hero-footer {
+    position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
+  }
+  
+  .about-us .article-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-us .article-card img {
+    width: 79vw;
   }
 }
