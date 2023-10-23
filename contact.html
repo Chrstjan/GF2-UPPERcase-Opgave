@@ -73,11 +73,11 @@
             <p>SMID OS EN MAIL, RING TIL OS ELLER UDFYLD KONTAKTFORMULAREN</p>
           </header>
           <div class="form-container">
-            <form action="contact.html">
+            <form name="contactForm" onsubmit="return validateForm()" action="contact.html" method="post">
               <div class="form-left">
-                <input type="text" placeholder="Indtast Navn" />
-                <input type="tel" placeholder="Indtast telefonnummer" />
-                <input type="mail" placeholder="Indtast Email" />
+                <input type="text" placeholder="Indtast Navn" name="name" required />
+                <input type="tel" placeholder="Indtast telefonnummer" name="phonenumber" required />
+                <input type="mail" placeholder="Indtast Email" name="email" required />
                 <div class="checkboxes">
                   <span>
                     <input type="checkbox" class="callCheckbox" />
@@ -131,7 +131,7 @@
                 <div class="form-btns">
                   <span>
                     <input type="reset" value="Cancel" />
-                    <input type="submit" value="Send" />
+                    <input type="submit" value="Send" id="submit" />
                   </span>
                 </div>
               </div>
