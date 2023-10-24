@@ -53,6 +53,14 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  position: relative;
+}
+
+.form-container #errorMessages {
+  position: absolute;
+  bottom: 0;
+  color: red;
+  font-size: 18px;
 }
 
 .form-container img {
@@ -125,7 +133,6 @@ form .radioBtns {
 form .radioBtns span {
   display: flex;
 }
-
 
 /* Media Queries */
 /* Mobile Display */

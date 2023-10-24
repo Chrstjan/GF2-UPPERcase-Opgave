@@ -1,26 +1,18 @@
-// const name = document.getElementById("#name");
-// const phoneNumber = document.getElementById("#phoneNumber");
-// const email = document.getElementById("#email");
+const name = document.getElementById("fName");
+const phoneNumber = document.getElementById("phoneNumber");
+const email = document.getElementById("Email");
 
-// const submit = document.getElementById("#submit");
+const form = document.getElementById("contact-form");
+const errorElement = document.getElementById("errorMessages");
 
-// submit.addEventListener("click", validate);
+form.addEventListener("submit", (e) => {
+  let messages = [];
+  if (name.value === "" || name.value == null) {
+    messages.push("Navn skal udfyldes");
+  }
 
-// const validate = (e) => {
-//     e.preventDefault();
-
-//     let valid = true;
-
-//     if (!name.value) {
-//         const nameError = document.getElementById("nameError");
-//         nameError.classList.add("visible");
-//         name.classList.add("invalid");
-//         nameError.setAttribute("aria-hidden", false);
-//         nameError.setAttribute("aria-invalid", true);
-//     }
-//     return valid;
-// }
-
-let name = document.contactForm.name.value;
-let phoneNumber = document.contactForm.phoneNumber.value;
-let email = document.contactForm.email.value;
+  if (messages.length > 0) {
+    e.preventDefault();
+    errorElement.innerText = messages.join(", ");
+  }
+});

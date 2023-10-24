@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Assets/css/main.css" />
     <title>UPPERcase Opgave</title>
+    <script defer src="./Assets/js/app.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -73,11 +74,27 @@
             <p>SMID OS EN MAIL, RING TIL OS ELLER UDFYLD KONTAKTFORMULAREN</p>
           </header>
           <div class="form-container">
-            <form name="contactForm" onsubmit="return validateForm()" action="contact.html" method="post">
+            <div id="errorMessages"></div>
+            <form id="contact-form" method="GET" action="contact.html">
               <div class="form-left">
-                <input type="text" placeholder="Indtast Navn" name="name" required />
-                <input type="tel" placeholder="Indtast telefonnummer" name="phonenumber" required />
-                <input type="mail" placeholder="Indtast Email" name="email" required />
+                <input
+                  type="text"
+                  placeholder="Indtast Navn"
+                  name="name"
+                  id="fName"
+                />
+                <input
+                  type="tel"
+                  placeholder="Indtast telefonnummer"
+                  name="phonenumber"
+                  id="phoneNumber"
+                />
+                <input
+                  type="mail"
+                  placeholder="Indtast Email"
+                  name="email"
+                  id="Email"
+                />
                 <div class="checkboxes">
                   <span>
                     <input type="checkbox" class="callCheckbox" />
